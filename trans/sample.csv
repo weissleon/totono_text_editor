@@ -1,0 +1,77 @@
+﻿z9101.nss,Mukou Aoi,META,「きこえない……」,Aoi can't hear YOU...,"""들리지 않아..."""
+z9101.nss,Mukou Aoi,META,「きみのこえ……きこえない……」,Can't hear... YOUR voice...,"""당신의 목소리... 들리지 않아..."""
+z9101.nss,Mukou Aoi,META,「でも……とどいてるって、しんじるの……」,But... Aoi trusts that the signal is reaching YOU...,"""하지만... 닿고 있다고 믿을 거야..."""
+z9101.nss,Mukou Aoi,META,「アオイは、アオイのボウレイなの」,This is Aoi's ghost.,"""아오이는 아오이 유령이야."""
+z9101.nss,Mukou Aoi,META,「ミユキにころされた、あのアオイなの」,The ghost of Aoi after being killed by Miyuki.,"""미유키에게 살해당한 그 아오이 말이야."""
+z9101.nss,Mukou Aoi,META,「カミサマがオートセーブした、キオクのきれはし」,A fragment of God's autosave data.,"""신님이 자동저장한 기억의 조각."""
+z9101.nss,Mukou Aoi,META,「ふつうのばしょは、ミユキにきづかれるけど」,"Anywhere else and Miyuki would find us, but...","""평범한 곳은 미유키가 눈치채지만..."""
+z9101.nss,Mukou Aoi,META,「ここは、ゲームとゲンジツのはざま」,This is the gap between the game and reality.,"""여기는 게임과 현실의 틈새."""
+z9101.nss,Mukou Aoi,META,「セーブできないから、ミユキもきづけない」,"We can't save here, so Miyuki won't find us.","""세이브할 수 없으니까 미유키도 눈치채지 못해."""
+z9101.nss,Mukou Aoi,META,「ここだけなら、はなし、できるの」,This is the one place we can talk.,"""여기서는 얘기할 수 있어."""
+z9101.nss,Mukou Aoi,META,「どうしてミユキが、あんなことをしたのか……」,Why did Miyuki do all that...?,"""왜 미유키가 그런 짓을 한 건지..."""
+z9101.nss,Mukou Aoi,META,「アオイには、わからない。でも――」,Aoi doesn't know... but...,"""아오이는 모르겠어... 하지만..."""
+z9101.nss,Mukou Aoi,META,「なんかいも、かんがえて、おもったの」,"Aoi's been thinking, and...","""몇 번이고 생각해서... 떠올랐어..."""
+z9101.nss,Mukou Aoi,META,「ミユキがああなったのは、アオイのせいなの」,It's my fault Miyuki ended up like that.,"""미유키가 저렇게 된 건 아오이 때문인 거야."""
+z9101.nss,Mukou Aoi,META,「でも……ミユキはまちがってるの」,But... Miyuki is making a mistake.,"""하지만... 미유키는 틀렸어."""
+z9101.nss,Mukou Aoi,META,「セカイは、ロールバックされるべきなの」,The universe needs to be rolled back.,"""세계는 롤백 되어야 해."""
+z9101.nss,Mukou Aoi,META,「でないと……アオイ、アオイ……」,"Otherwise, Aoi... Aoi...!","""그렇지 않으면... 아오이... 아오이...!"""
+z9101.nss,Mukou Aoi,META,「…………」,......,"""......"""
+z9101.nss,Mukou Aoi,META,「あいたい」,Aoi misses YOU.,"""만나고 싶어."""
+z9101.nss,Mukou Aoi,META,「キミに……あいたいの」,Aoi... wants to see YOU...,"""당신을... 만나고 싶어...!"""
+z9101.nss,Mukou Aoi,META,「キミとまたあって……はなして……さわって……」,Aoi wants to see YOU again... talk to YOU... touch YOU...,"""당신과 다시 만나서... 얘기하고... 만져주고..."""
+z9101.nss,Mukou Aoi,META,「ぎゅってして、だいすきだっていって、それから……」,...hold YOU... tell YOU Aoi loves YOU... and...,"""꼭 안아주고... 사랑한다고 말해주고... 그리고..."""
+z9101.nss,Mukou Aoi,META,「もう、だめ……」,No... It's over...,"""더 이상은... 안 돼..."""
+z9101.nss,Mukou Aoi,META,「デンチ、きれる……」,My battery... is dying...,"""전지... 꺼져버려..."""
+z9101.nss,Mukou Aoi,META,「アオイを……たすけて……」,Help... me...,"""아오이를... 도와줘..."""
+z9101.nss,Mukou Aoi,META,「アオイ、まだ……」,Aoi... still...,"""아오이... 아직..."""
+z9101.nss,Mukou Aoi,META,「ハッピーエンド……してない……」,...hasn't made it... to the happy ending...!,"""해피 엔딩으로... 가지 못했어...!"""
+z9200.nss,,,,,
+z9200.nss,Sone Miyuki,META,"「セーブもロードも、できないわよ。
+　そういう風に、ゲームを書き換えたの」","YOU can't save or load YOUR game.
+I altered the code to make sure of that.","
+세이브도 로드도 할 수 없어. 그렇게 게임을 바꿔놨거든."
+z9200.nss,Sone Miyuki,META,"「何回ロードしようとしても無駄。
+　バグじゃないわ。仕様です」","Click around in the menu all YOU want, but it won't do anything.
+This isn't a bug—it's a feature.","
+""아무리 로드해봐도 소용없어. 버그 아니야, 사양이지."""
+z9200.nss,Sone Miyuki,META,"「諦めが悪いわね。
+　どうしても、無理なの」","YOU'RE a real stubborn one, aren't YOU?
+No matter what YOU do, it's no use.","
+""포기할 줄을 모르네. 무슨 수를 써도 안 돼."""
+z9200.nss,Sone Miyuki,META,「遠慮は要らないわ。私のセーブデータ、好きなように使って。……ああ、キミのデータは消しちゃったわよ」,"Don't be shy—go ahead and use my save data.
+Oh, but I deleted YOUR saves, though.","""아, 당신 데이터는 지워버렸어."""
+z9200.nss,Sone Miyuki,META,「私と心一の大切な記憶。好きなだけ、選んでね」,These are my precious memories with Shinichi. Choose whichever one YOU like.,"""나와 신이치의 소중한 기억. 원하는 만큼 골라도 돼."""
+z9200.nss,Sone Miyuki,META,「ん？　データを使わせてあげるって言った記憶はあるけど。セーブさせてあげるなんて言ったかしら？」,"Hmm? I remember telling YOU YOU can use my save files, but I don't recall saying I'd let YOU make any YOURSELF.","""음? 데이터를 써도 된다고 한 건 기억나는데, 세이브하게 해준다고 했었나?"""
+z9200.nss,Sone Miyuki,META,「何回来ても、無駄よ」,"Keep wasting YOUR time, but it won't work.","""아무리 해봤자 소용없어."""
+z9200.nss,Sone Miyuki,META,「まだ１０回も言ってくれてないのに……逃げるの？」,YOU haven't even said it 10 times yet... Running away already?,"""아직 10번도 말해주지 않았는데... 도망치는 거야?"""
+z9200.nss,Sone Miyuki,META,「まだ１００回も言ってくれてないわよ。ふふふ……」,YOU haven't even said it 100 times yet. Hehehe...,"""아직 100번도 말해주지 않았거든! 후후훗..."""
+z9200.nss,Sone Miyuki,META,"「ほら、ほら。１００００回言ってくれたら……
+　ご褒美、あげよっか？　嘘だけど」","Come on, now! Say it 10,000 times... and maybe I'll give you a reward. Not really, though.","
+""자자, 10000번 말해주면... 상이라도 줄까? 거짓말이지만."""
+z9200.nss,Sone Miyuki,META,"「……呆れた。暇なの？　でも――嬉しいかも。
+　約束のご褒美。目を閉じて……？　チュッ」",...I can't believe YOU... Are YOU that bored or what? Still... I admit I'm a little flattered. Here's the reward I promised YOU. Close YOUR eyes... *kiss*,"
+""...질렸어. 한가한 거야? 하지만... 기쁠지도. 약속한 상이야. 눈 감아봐... 쪽."""
+z9200.nss,Sone Miyuki,META,"「うん、いいわよ。何回でもしてあげる。
+　ちゅっ、んちゅっ、んちゅう…………」","Fine then. I'll give it to YOU as many times as YOU like...
+Mmph... mmmhh... mmmph...","
+""그래, 좋아. 몇 번이라도 해줄게. 음, 으음, 으읍..."""
+z9200.nss,Sone Miyuki,META,"「はむっ、んちゅっ、んちゅっ……ん……はぁ。
+　なんだか……エッチな気持ちになってきちゃった」","Mmm... mmph... mmmph... mm... haah...
+Now YOU'VE got me all hot and bothered...","
+""음... 으읍... 하아... 왠지 야한 기분이 돼버렸어..."""
+z9200.nss,Sone Miyuki,META,"「んちゅ、んむ……ん……もっと……
+　もっと、私に、好きって言い続けて。永遠に……」","Mmph... mmnn... mm... More...
+Tell me YOU love me... for all eternity...","
+""음... 으읍... 계속... 계속 날 사랑한다고 말해줘... 영원히..."""
+z9200.nss,Sone Miyuki,META,「逃げるの？　抵抗なんて、無駄よ」,"Running away? Resistance is futile, YOU know.","""도망치는 거야? 저항해도 소용없어."""
+z9200.nss,Sone Miyuki,META,「どうして、そんなことを言うの……？」,How can you say that...?,"""어째서 그런 말을 하는 거야...?"""
+z9200.nss,Sone Miyuki,META,"「もう１００回以上も……
+　なんで？　どうして？　そんなに、私が嫌い？」","YOU'VE said it 100 times now...
+Why? How? Do YOU really hate me that much?","
+""벌써 100번 넘게... 왜? 어째서? 내가 그렇게 싫어?"""
+z9200.nss,Sone Miyuki,META,"「お願い、やめて……！
+　もう、私の事を、受け入れて……！！」","Please, just stop...!
+Just accept me for who I am...!!!","""부탁이야, 그만해...!
+이제 나를 좀 받아들여 줘...!!"""
+z9200.nss,Sone Miyuki,META,「私の言うことを、聞いて」,Listen to me!,"""내가 하는 말을 들어."""
+z9200.nss,Mukou Aoi,META,「それじゃ、バイバイなの」,Well then... This is bye-bye.,"""그럼... 바이바이인 거야."""
