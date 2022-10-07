@@ -153,11 +153,11 @@ async function translate(srcText, translationData) {
       }
       if (!isTransPlanted) {
         const datum = translationData.filter(
-          (datum) => datum[1].replace("\n", "\r\n") === src
+          (datum) => datum[1].replace("\n", "\r\n") === src || datum[1] === src
         );
         let translation = null;
 
-        console.log(`datum: ${datum}`);
+        // console.log(`datum: ${datum}`);
 
         if (datum.length === 0) {
           const response = await prompts([
@@ -193,14 +193,11 @@ async function translate(srcText, translationData) {
   return finalText;
 }
 
-async function run() {
-  const filePath = process.argv[2];
+async function translateSingleFile(filePath, translationData) {
   const path = require("path");
-  const translationData = await getTranslationDataCsv();
-
   const fs = require("fs/promises");
-  const srcText = await fs.readFile(filePath, { encoding: "utf-8" });
 
+  const srcText = await fs.readFile(filePath, { encoding: "utf-8" });
   const finalText = await translate(srcText, translationData);
 
   try {
@@ -213,114 +210,59 @@ async function run() {
     path.join(PATH_DIR_OUT, path.basename(filePath)),
     finalText
   );
+}
 
-  // console.log(srcText);
+async function translateMultipleFiles(dirPath, translationData) {
+  const path = require("path");
+  const fs = require("fs/promises");
 
-  // let transText = "";
-  // let cursor = 0;
+  const fileList = await fs.readdir(dirPath, { encoding: "utf-8" });
 
-  // if (srcText.indexOf(refStartTag) === -1) {
-  //   transText = srcText;
-  //   await fs.writeFile(path.join(PATH_DIR_OUT, path.basename(filePath)));
-  //   return;
-  // }
+  for (const file of fileList) {
+    await translateSingleFile(path.join(dirPath, file), translationData);
+  }
+}
 
-  // while (true) {
-  //   transText += srcText.substring(
-  //     cursor,
-  //     srcText.indexOf(startTag) + startTag.length
-  //   );
-  //   cursor = srcText.indexOf(startTag) + startTag.length;
+async function run() {
+  const prompts = require("prompts");
 
-  //   const jp = srcText
-  //     .substring(cursor, srcText.indexOf(endTag))
-  //     .replace(/\n/, "");
-  //   console.log("Japanese:", jp);
+  const response = await prompts([
+    {
+      name: "mode",
+      type: "select",
+      choices: ["Batch Swap", "Single File"],
+      message: "Please select the mode:",
+    },
+  ]);
 
-  //   transText += srcText.substring(
-  //     cursor,
-  //     srcText.indexOf(endTag) + endTag.length
-  //   );
-  //   cursor = srcText.indexOf(endTag) + endTag.length;
+  const { mode } = response;
 
-  //   transText += srcText.substring(cursor, srcText.indexOf(`$"`));
-  // }
+  const translationData = await getTranslationDataCsv();
+
+  let filePath = "";
+  switch (mode) {
+    case 0:
+      filePath = await prompts({
+        name: "filePath",
+        type: "text",
+        message: "Please specify the directory path:",
+      }).then((data) => data.filePath);
+      await translateMultipleFiles(filePath, translationData);
+      break;
+
+    case 1:
+      filePath = await prompts({
+        name: "filePath",
+        type: "text",
+        message: "Please specify the file path:",
+      }).then((data) => data.filePath);
+
+      await translateSingleFile(filePath, translationData);
+      break;
+
+    default:
+      throw new Error("Invalid Mode! Shutting down");
+  }
 }
 
 run();
-
-// const path = require("path");
-
-// function readFileList(dirPath) {
-//   const fs = require("fs");
-//   const fileList = fs.readdirSync(dirPath, { encoding: "utf8" });
-
-//   return fileList;
-// }
-
-// function readFile(filePath) {
-//   const fs = require("fs");
-//   const text = fs.readFileSync(filePath, { encoding: "utf-8" });
-
-//   return text;
-// }
-
-// function extractTargets(text) {
-//   const targets = text.match(/(?<=\$"[\r\n]*).+(?=[\r\n]*";)/gi);
-
-//   return targets;
-// }
-
-// async function readTranslationData(filePath) {
-//   const EXCEL = require("exceljs");
-//   const workbook = new EXCEL.Workbook();
-//   await workbook.xlsx.readFile(filePath);
-
-//   const worksheet = workbook.worksheets[0];
-
-//   const rowCount = worksheet.rowCount;
-//   const rows = worksheet.getRows(2, rowCount - 1);
-
-//   const data = [];
-//   for (const row of rows) {
-//     const original = row.getCell("D").text;
-//     const translation = row.getCell("F").text;
-
-//     data.push([original, translation]);
-//   }
-
-//   return data;
-// }
-
-// function exportText(text, outputPath) {
-//   const fs = require("fs");
-//   fs.writeFileSync(outputPath, text, { encoding: "utf-8" });
-// }
-
-// function swapText(target, source) {}
-
-// async function run() {
-//   const fileList = readFileList(PATH_DIR_SRC);
-
-//   //   const filePath = path.join(PATH_DIR_SRC, fileList[0]);
-
-//   const transData = await readTranslationData(
-//     path.join(PATH_DIR_TRANS, "translation_data.xlsx")
-//   );
-
-//   for (const file of fileList) {
-//     const filePath = path.join(PATH_DIR_SRC, file);
-//     let text = readFile(filePath);
-//     // const targets = extractTargets(text);
-
-//     for (const datum of transData) {
-//       if (datum[0] === "" || text.includes(datum[0]) === null)
-//         console.log(datum, "not Matched!");
-//       else text = text.replace(datum[0], datum[1]);
-//     }
-
-//     exportText(text, path.join(PATH_DIR_OUT, file));
-//   }
-// }
-
-// run();
